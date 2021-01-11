@@ -18,6 +18,7 @@ module Clay.List
 , lowerGreek
 , lowerLatin
 , lowerRoman
+, none
 , square
 , upperAlpha
 , upperLatin
@@ -47,7 +48,7 @@ newtype ListStyleType = ListStyleType Value
 
 disc, armenian, circleListStyle, cjkIdeographic, decimal, decimalLeadingZero, georgian
     , hebrew, hiragana, hiraganaIroha, katakana, katakanaIroha, lowerAlpha
-    , lowerGreek, lowerLatin, lowerRoman, square, upperAlpha, upperLatin, upperRoman :: ListStyleType
+    , lowerGreek, lowerLatin, lowerRoman, none, square, upperAlpha, upperLatin, upperRoman :: ListStyleType
 
 disc                = ListStyleType "disc"
 armenian            = ListStyleType "armenian"
@@ -65,6 +66,7 @@ lowerAlpha          = ListStyleType "lower-alpha"
 lowerGreek          = ListStyleType "lower-greek"
 lowerLatin          = ListStyleType "lower-latin"
 lowerRoman          = ListStyleType "lower-roman"
+none                = ListStyleType "none"
 square              = ListStyleType "square"
 upperAlpha          = ListStyleType "upper-alpha"
 upperLatin          = ListStyleType "upper-latin"
